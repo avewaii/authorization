@@ -2,14 +2,10 @@ import React, { useState } from 'react';
 import {Grid, Paper, Avatar, Button, Typography, Link} from '@material-ui/core'
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import axios from 'axios';
-const crypto = require('crypto');
 
 const Authorization = () => {
    
     let [userData, setUserData] = useState({});
-
-    //{headers: {"Authorisation": "REPLACE_BY_ACTUAL_SESSION"}}
-    
 
     function submitForm(e) {
 
