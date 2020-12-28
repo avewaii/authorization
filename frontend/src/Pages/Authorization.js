@@ -44,7 +44,7 @@ const Authorization = () => {
                     </Avatar>
                     <h2>Sign in</h2>
 
-                    <form onSubmit={submitForm} action='/sessions' method='post'>
+                    <form onSubmit={submitForm}>
                         <input onChange={(e) => setUserData({...userData, [e.target.name]: e.target.value})} label='Email' name='email' type='' placeholder='Enter your email' required/>
                         <input onChange={(e) => setUserData({...userData, [e.target.name]: e.target.value})} label='Password' name='password' type='password' placeholder='Enter your password' required/>                    
                         <Button onClick={(e) => setUserData({...userData, status: 'avaliable'})} type='submit' style={buttonStyle} variant='contained' size='large' color='primary' fullWidth>Sign in</Button>     
